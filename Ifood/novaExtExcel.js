@@ -4,6 +4,7 @@ const ws = wb.addWorksheet("NovoDelivery")
 const data = require('./teste.json') //Defina AQUI o arquivo a ser convertido.
 const {obterMes} = require('../myModules/myDate')
 const {obterUnidade} = require('../myModules/obterUnidade')
+const {obterCodigo} = require('../myModules/obterCodigo')
 
 const headingColumnNames = [
     "Unidade",
@@ -11,7 +12,8 @@ const headingColumnNames = [
     "Status",
     "Data",
     "Produto",
-    "Qtd"
+    "Qtd",
+    "Cod. Teknisa"
     /* "Valor Uni.",
     "Incentivo",
     "Subtotal" */
@@ -45,6 +47,7 @@ data.forEach(Uni => { //passa por cada Unidade
                 ws.cell(rowIndex, columnIndex++).string(date)
                 ws.cell(rowIndex, columnIndex++).string(i[0])    // Produto
                 ws.cell(rowIndex, columnIndex++).number(parseInt(i[1]))    // Quantidade
+                ws.cell(rowIndex, columnIndex++).string(obterCodigo(i[0]) || "Não encontrado")           //Código Teknisa
                 //ws.cell(rowIndex, columnIndex++).number(parseInt(i[2].replace(".", ","))).style(styleReal)    // Valor Unitário
                 //ws.cell(rowIndex, columnIndex++).number(parseInt(i[3].replace(".", ","))).style(style)    // Incentivo
                 //ws.cell(rowIndex, columnIndex++).number(parseInt(i[4].replace(".", ","))).style(styleReal)    // Subtotal
