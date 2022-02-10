@@ -1,4 +1,6 @@
 const fs = require('fs').promises;
+const diretorioArq = "./arquivosJson" // Aqui defina a pasta origem dos arquivos a ser concaternados
+const arquivoDestino = "./Fevereiro.json" // Aqui defina o arquivo em que será concaternado.
 
 async function listarArquivosDoDiretorio(diretorio, arquivos) {
     if (!arquivos)
@@ -13,13 +15,13 @@ async function listarArquivosDoDiretorio(diretorio, arquivos) {
     }
     return arquivos;
 }
-async function test() {
+(async function concaternar() {
     let arquivoErr = ""
     try {
-        let arquivos = await listarArquivosDoDiretorio("./ItensIfood"); // coloque o caminho do seu diretorio
+        let arquivos = await listarArquivosDoDiretorio(diretorioArq); // coloque o caminho do seu diretorio
         
         console.log("Total de arquivos é: " + arquivos.length)
-        let arquivoAgrupado = require("./teste.json")
+        let arquivoAgrupado = require(arquivoDestino)
         arquivos.forEach(async e => { // Percorre todos arquivos .json
             arquivoErr = e
             console.log(e);
@@ -27,7 +29,7 @@ async function test() {
             arquivoAgrupado.push(arquivoE)
         })
         arquivoAgrupado = JSON.stringify(arquivoAgrupado)
-        fs.writeFile('teste.json', arquivoAgrupado, (err) => {
+        fs.writeFile(arquivoDestino, arquivoAgrupado, (err) => {
             if (err) throw err;
             console.log('O arquivo foi criado!');
         });
@@ -36,5 +38,4 @@ async function test() {
     } catch {
         console.log("Gerou erro no arquivo: " + arquivoErr)
     }
-}
-test();
+})()

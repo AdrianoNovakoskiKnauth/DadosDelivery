@@ -79,7 +79,7 @@ async function forPedidos() {
       } while (erroCarregar == true)
   }
 }
-forPedidos()
+
 (async function forPaginas() {
   let numName = 1
   let unidadeItens = await document.querySelectorAll('span[data-testid="restaurant-profile-name"]')
