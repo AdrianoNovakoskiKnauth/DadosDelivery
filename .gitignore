@@ -1,5 +1,4 @@
-*.json
-*.xlsx
+Ifood/ItensIfood
 Testes.js
 KDS/
 node_modules/

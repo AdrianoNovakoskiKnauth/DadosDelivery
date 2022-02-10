@@ -1,0 +1,16 @@
+{
+  "name": "itensporpedidos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "excel4node": "^1.7.2",
+    "node-xlsx": "^0.21.0"
+  }
+}
