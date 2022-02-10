@@ -1,7 +1,7 @@
 const xl = require("excel4node")
 const wb = new xl.Workbook()
 const ws = wb.addWorksheet("NovoDelivery")
-const data = require('./teste.json') //Defina AQUI o arquivo a ser convertido.
+const data = require('./provisorio.json') //Defina AQUI o arquivo a ser convertido.
 const {obterMes} = require('../myModules/myDate')
 const {obterUnidade} = require('../myModules/obterUnidade')
 const {obterCodigo} = require('../myModules/obterCodigo')

@@ -1,6 +1,6 @@
 const fs = require('fs').promises;
 const diretorioArq = "./arquivosJson" // Aqui defina a pasta origem dos arquivos a ser concaternados
-const arquivoDestino = "./Fevereiro.json" // Aqui defina o arquivo em que será concaternado.
+const arquivoDestino = "./Provisorio.json" // Aqui defina o arquivo em que será concaternado.
 
 async function listarArquivosDoDiretorio(diretorio, arquivos) {
     if (!arquivos)
