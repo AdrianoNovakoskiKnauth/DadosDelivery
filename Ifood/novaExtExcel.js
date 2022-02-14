@@ -70,18 +70,20 @@ data.forEach(Uni => {
                     //ws.cell(rowIndex, columnIndex++).number(parseInt(i[3].replace(".", ","))).style(style)    // Incentivo
                     //ws.cell(rowIndex, columnIndex++).number(parseInt(i[4].replace(".", ","))).style(styleReal)    // Subtotal
                     rowIndex++; //incrementa o contador para ir para a próxima linha
+                } else if(codProduto == false) {
+                    console.log(i[0]) // Descrição do produto
                 } else {
                     let item = []
                     item.push(i[0]) // Descrição do produto
                     codProduto ? item.push(codProduto) : item.push("Item não encontrado")
                     itensDescartados.push(item)
                 }
-            }
+            } 
         })
     })
-    itensDescartados.forEach(item => {
+    /* itensDescartados.forEach(item => {
         console.log(item)
-    })
+    }) */
 });
 wb.write(`Delivery.xlsx`)
 
