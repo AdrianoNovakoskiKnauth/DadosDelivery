@@ -28,6 +28,10 @@ async function dadosPedidos() {
           } else if (numPedido.indexOf('Cancelado') !== -1) {
               pedido["status"] = "Cancelado"
               pedido["Nº"] = await numPedido.replace('Cancelado', "").replace('Pedido nº ', "")
+          }else {
+            pedido["status"] = "Indeterminado"
+            pedido["Nº"] = await numPedido.slice(0,4).replace('Pedido nº ', "")
+            console.log(pedido["Nº"])
           }
           let dataHora = await document.querySelectorAll('span[class="sc-fKVqWL gBuhxG"]')
           dataHora = await dataHora[0].textContent
