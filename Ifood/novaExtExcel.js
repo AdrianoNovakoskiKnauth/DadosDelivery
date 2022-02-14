@@ -22,14 +22,30 @@ function escolhaRelatorio() {
         console.log("Entrada inválida! \n Digite apenas os número das opções.")
     }
 }
-escolhaRelatorio()
+//escolhaRelatorio()
 
-let rowIndex = 2; //começa na linha 2
-// Colocando os dados na planilha.
-data.forEach(Uni => { //passa por cada Unidade
+const headingColumnNames = [
+    "Unidade",
+    "Nº pedido",
+    "Status",
+    "Data",
+    "Produto",
+    "Qtd",
+    "Cod. Teknisa"
+    /* "Valor Uni.",
+    "Incentivo",
+    "Subtotal" */
+]
+
+let headingColumnIndex = 1
+headingColumnNames.forEach(heading => {
+    ws.cell(1, headingColumnIndex++).string(heading)
+})
+let rowIndex = 2;
+data.forEach(Uni => {
     let itensDescartados = []
     const nameUnidade = obterUnidade(Uni.Unidade) || "Não encontrou unidade"
-    Uni.Pedidos.forEach(ped => { //Passa por cada Pedido
+    Uni.Pedidos.forEach(ped => {
         const numPedido = ped.Nº
         let status = ped.status ? `${ped.status}` : "Indeterminado"
         let dia = ped.dataHora.slice(0, 2)
@@ -39,10 +55,7 @@ data.forEach(Uni => { //passa por cada Unidade
         itensDia.forEach(i => {
             if (i.length === 5) {
                 let descProduto = i[0]
-                //console.log(descProduto)
-                /* if (descProduto.indexOf('Este item foi cancelado') !== -1){
-                    descProduto.replace("Este item foi cancelado", "")
-                } */
+                descProduto = descProduto.replace("Este item foi cancelado", "")
                 let codProduto = obterCodigo(descProduto)
                 if (codProduto != "Molhos" && codProduto != "Adicional" && codProduto != false) {
                     let columnIndex = 1; //diz para começar na primeira coluna
