@@ -12,3 +12,14 @@ async function listarArquivosDoDiretorio(diretorio, arquivos) {
     }
     return arquivos;
 }
+
+function obterNomeArquivo (diretorio) {
+    diretorio = diretorio
+    diretorio = diretorio.split("/")
+    diretorio = diretorio[diretorio.length-1].split(".")
+    let nomeArquivo = diretorio[0]
+    let extencao = diretorio[1]
+    return nomeArquivo
+}
+
+module.exports = { listarArquivosDoDiretorio, obterNomeArquivo }
