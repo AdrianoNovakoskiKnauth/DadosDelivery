@@ -2,9 +2,7 @@ const xl = require("excel4node")
 const wb = new xl.Workbook()
 const ws = wb.addWorksheet("NovoDelivery")
 const data = require('./provisorio.json') //Defina AQUI o arquivo a ser convertido.
-const { obterMes } = require('../myModules/myDate')
-const { obterUnidade } = require('../myModules/obterUnidade')
-const { obterCodigo } = require('../myModules/obterCodigo')
+const { obterProduto, obterUnidade, obterMes } = require('../myModules/app')
 const readline = require('readline')
 
 function escolhaRelatorio() {
@@ -56,7 +54,7 @@ data.forEach(Uni => {
             if (i.length === 5) {
                 let descProduto = i[0]
                 descProduto = descProduto.replace("Este item foi cancelado", "")
-                let codProduto = obterCodigo(descProduto)
+                let codProduto = obterProduto(descProduto, "codigo")
                 if (codProduto != "Molhos" && codProduto != "Adicional" && codProduto != false) {
                     let columnIndex = 1; //diz para começar na primeira coluna
                     ws.cell(rowIndex, columnIndex++).string(nameUnidade)
