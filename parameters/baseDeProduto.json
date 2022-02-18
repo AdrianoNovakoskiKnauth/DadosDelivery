@@ -1,0 +1,806 @@
+[
+    {
+        "4 QUEIJOS": {
+            "codigo": "9.10.20.050.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "Ãgua com gÃ¡s - 500ml": {
+            "codigo": "9.30.60.010.00",
+            "categoria": "BEBIDAS"
+        }
+    },
+    {
+        "Ãgua sem gÃ¡s - 500ml": {
+            "codigo": "9.30.60.000.00",
+            "categoria": "BEBIDAS"
+        }
+    },
+    {
+        "AÃ§aÃ­ mega ligado 500ml": {
+            "codigo": "9.20.30.000.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "AÃ§aÃ­ meguinha 300ml": {
+            "codigo": "9.20.30.040.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "AÃ§aÃ­ tÃ¡ ligado 400ml": {
+            "codigo": "9.20.10.000.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "AÃ‡AÃ MEGUINHA 300ml": {
+            "codigo": "9.20.30.040.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "Abacaxi": {
+            "codigo": "9.30.20.000.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Abacaxi - 500ml": {
+            "codigo": "9.30.20.000.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Abacaxi com hortelã": {
+            "codigo": "9.30.20.010.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Abacaxi com HortelÃ£ - 500ml": {
+            "codigo": "9.30.20.010.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Abacaxi Irado 400 ml": {
+            "codigo": "9.20.10.020.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "Abacaxi mega Irado 500 ml": {
+            "codigo": "9.20.30.020.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "Açaí com banana": {
+            "codigo": "9.20.10.001.00",
+            "categoria": "BOWLS"
+        }
+    },
+    {
+        "Açaí com Banana Picada, Paçoca de Amendoim e Tapioca Crocante": {
+            "codigo": "9.20.10.001.00",
+            "categoria": "BOWLS"
+        }
+    },
+    {
+        "Açaí com morango": {
+            "codigo": "9.20.10.001.00",
+            "categoria": "BOWLS"
+        }
+    },
+    {
+        "Açaí com Morango, Kiwi e Granola": {
+            "codigo": "9.20.10.001.00",
+            "categoria": "BOWLS"
+        }
+    },
+    {
+        "Açaí com Morango, Leite Ninho e Granola": {
+            "codigo": "9.20.10.001.00",
+            "categoria": "BOWLS"
+        }
+    },
+    {
+        "Açaí mega ligado": {
+            "codigo": "9.20.30.000.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "AÇAÍ MEGA LIGADO 500ml": {
+            "codigo": "9.20.30.000.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "Açai Meguinha 300ml": {
+            "codigo": "9.20.30.040.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "Açaí Meguinha 300ml": {
+            "codigo": "9.20.30.040.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "Açaí tá ligado": {
+            "codigo": "9.20.10.000.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "AÇAÍ TÁ LIGADO 400ml": {
+            "codigo": "9.20.10.000.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "Acerola": {
+            "codigo": "9.30.20.020.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Acerola - 500ml": {
+            "codigo": "9.30.20.020.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Adicional Coca Ralado": {
+            "codigo": "Adicional",
+            "categoria": "ADICIONAIS"
+        }
+    },
+    {
+        "Adicional de Banana Picada": {
+            "codigo": "Adicional",
+            "categoria": "ADICIONAIS"
+        }
+    },
+    {
+        "Adicional de Farinha de Amendoim": {
+            "codigo": "Adicional",
+            "categoria": "ADICIONAIS"
+        }
+    },
+    {
+        "Adicional de Granola": {
+            "codigo": "Adicional",
+            "categoria": "ADICIONAIS"
+        }
+    },
+    {
+        "Adicional de Kiwi Picado": {
+            "codigo": "Adicional",
+            "categoria": "ADICIONAIS"
+        }
+    },
+    {
+        "Adicional de Leite Ninho": {
+            "codigo": "Adicional",
+            "categoria": "ADICIONAIS"
+        }
+    },
+    {
+        "Adicional de Morango Picado": {
+            "codigo": "Adicional",
+            "categoria": "ADICIONAIS"
+        }
+    },
+    {
+        "Adicional Kiwi": {
+            "codigo": "Adicional",
+            "categoria": "ADICIONAIS"
+        }
+    },
+    {
+        "Água com gás": {
+            "codigo": "9.30.60.010.00",
+            "categoria": "BEBIDAS"
+        }
+    },
+    {
+        "Água sem gás": {
+            "codigo": "9.30.60.000.00",
+            "categoria": "BEBIDAS"
+        }
+    },
+    {
+        "ANTIOXIDANTE C": {
+            "codigo": "9.30.50.020.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Banana": {
+            "codigo": "Adicional",
+            "categoria": "ADICIONAIS"
+        }
+    },
+    {
+        "Batido com morango": {
+            "codigo": "Adicional",
+            "categoria": "ADICIONAIS"
+        }
+    },
+    {
+        "Bowl de Açaí": {
+            "codigo": "9.20.10.001.00",
+            "categoria": "BOWLS"
+        }
+    },
+    {
+        "Bowl de Cupuaçu": {
+            "codigo": "9.20.10.040.00",
+            "categoria": "BOWLS"
+        }
+    },
+    {
+        "Bowl de Cupuaçu Delicia": {
+            "codigo": "9.20.10.040.00",
+            "categoria": "BOWLS"
+        }
+    },
+    {
+        "Bowl de Pitaya": {
+            "codigo": "9.25.01.004.00",
+            "categoria": "BOWLS"
+        }
+    },
+    {
+        "BrÃ³colis": {
+            "codigo": "9.10.40.010.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "BRÓCOLIS": {
+            "codigo": "9.10.40.010.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "Caju": {
+            "codigo": "9.30.20.030.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Caju - 500ml": {
+            "codigo": "9.30.20.030.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "CALABRESA": {
+            "codigo": "9.10.10.010.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "CALABRESA CATUPIRY": {
+            "codigo": "9.10.20.030.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "CamarÃ£o Catupiry": {
+            "codigo": "9.10.30.000.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "CAMARÃO CATUPIRY": {
+            "codigo": "9.10.30.000.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "CARNE SECA ESPECIAL": {
+            "codigo": "9.10.20.020.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "Chocolate": {
+            "codigo": "9.10.50.000.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "CHOKOLATE": {
+            "codigo": "9.10.50.000.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "CHOKOWHITE": {
+            "codigo": "9.10.50.010.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "Cjokowhite": {
+            "codigo": "9.10.50.010.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "Coca cola - lata": {
+            "codigo": "9.30.60.030.00",
+            "categoria": "BEBIDAS"
+        }
+    },
+    {
+        "Coca cola lata": {
+            "codigo": "9.30.60.030.00",
+            "categoria": "BEBIDAS"
+        }
+    },
+    {
+        "Coca zero - lata": {
+            "codigo": "9.30.60.040.00",
+            "categoria": "BEBIDAS"
+        }
+    },
+    {
+        "Combo AÃ‡AÃ FIT": {
+            "codigo": "9.40.20.020.00",
+            "categoria": "PROMOCAO/COMBO"
+        }
+    },
+    {
+        "Combo Açaí Fit": {
+            "codigo": "9.40.20.020.00",
+            "categoria": "PROMOCAO/COMBO"
+        }
+    },
+    {
+        "Combo Mega": {
+            "codigo": "9.40.20.030.00",
+            "categoria": "PROMOCAO/COMBO"
+        }
+    },
+    {
+        "Fanta - Guaraná": {
+            "codigo": "9.30.60.080.00",
+            "categoria": "BEBIDAS"
+        }
+    },
+    {
+        "Fanta Guaraná - lata": {
+            "codigo": "9.30.60.080.00",
+            "categoria": "BEBIDAS"
+        }
+    },
+    {
+        "Fanta laranja - lata": {
+            "codigo": "9.30.60.050.00",
+            "categoria": "BEBIDAS"
+        }
+    },
+    {
+        "FILET COM CHEDDAR": {
+            "codigo": "9.10.30.010.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "FRANGO": {
+            "codigo": "9.10.10.000.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "FRANGO CATUPIRY": {
+            "codigo": "9.10.20.010.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "FRANGO CHEDDAR E BACON": {
+            "codigo": "9.10.20.040.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "FRANGO E PALMITO": {
+            "codigo": "9.10.40.000.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "Frutas Vermelhas": {
+            "codigo": "9.30.50.060.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Granola": {
+            "codigo": "Adicional",
+            "categoria": "ADICIONAIS"
+        }
+    },
+    {
+        "H20 limão": {
+            "codigo": "9.30.60.020.00",
+            "categoria": "BEBIDAS"
+        }
+    },
+    {
+        "Kalzone Com Nutella": {
+            "codigo": "9.10.50.020.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "Ketchup": {
+            "codigo": "Molhos",
+            "categoria": "MOLHOS"
+        }
+    },
+    {
+        "Ketchup delivery": {
+            "codigo": "Molhos",
+            "categoria": "MOLHOS"
+        }
+    },
+    {
+        "Laranja": {
+            "codigo": "9.30.20.040.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Laranja - 500ml": {
+            "codigo": "9.30.20.040.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Leite Ninho": {
+            "codigo": "Adicional",
+            "categoria": "ADICIONAIS"
+        }
+    },
+    {
+        "LimÃ£o - 500ml": {
+            "codigo": "9.30.20.050.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Limão": {
+            "codigo": "9.30.20.050.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Maionese": {
+            "codigo": "Molhos",
+            "categoria": "MOLHOS"
+        }
+    },
+    {
+        "Maionese delivery": {
+            "codigo": "Adicional",
+            "categoria": "MOLHOS"
+        }
+    },
+    {
+        "Manga": {
+            "codigo": "9.30.20.060.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Manga - 500ml": {
+            "codigo": "9.30.20.060.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Maracuja": {
+            "codigo": "9.30.20.070.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Maracujá": {
+            "codigo": "9.30.20.070.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Maracujá Irado 400ml": {
+            "codigo": "9.20.10.020.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "Maracujá Mega Irado 500ml": {
+            "codigo": "9.20.30.020.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "MaracujÃ¡ - 500ml": {
+            "codigo": "9.30.20.070.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "MARGHERITA": {
+            "codigo": "9.10.10.030.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "Marguerita": {
+            "codigo": "9.10.10.030.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "MAXI BEEF": {
+            "codigo": "9.10.20.000.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "Mega Pitaya + Fruta 500ml": {
+            "codigo": "9.25.01.004.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "Melancia": {
+            "codigo": "9.30.20.080.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Melancia - 500ml": {
+            "codigo": "9.30.20.080.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Morango": {
+            "codigo": "9.30.20.090.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Morango - 500ml": {
+            "codigo": "9.30.20.090.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Morango batido": {
+            "codigo": "Adicional",
+            "categoria": "ADICIONAIS"
+        }
+    },
+    {
+        "Morango mega Sem NoÃ§Ã£o 500 ml": {
+            "codigo": "9.20.30.010.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "MORANGO MEGA SEM NOÇÃO 500ml": {
+            "codigo": "9.20.30.010.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "Morango Sem NoÃ§Ã£o 400 ml": {
+            "codigo": "9.20.10.010.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "MORANGO SEM NOÇÃO 400ml": {
+            "codigo": "9.20.10.010.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "Mostarda": {
+            "codigo": "Molhos",
+            "categoria": "MOLHOS"
+        }
+    },
+    {
+        "Mostarda delivery": {
+            "codigo": "Adicional",
+            "categoria": "MOLHOS"
+        }
+    },
+    {
+        "Negresco": {
+            "codigo": "Adicional",
+            "categoria": "ADICIONAIS"
+        }
+    },
+    {
+        "PALMITO": {
+            "codigo": "9.10.40.020.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "Pitaya + Fruta 400ml": {
+            "codigo": "9.25.01.004.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "Pitaya Daora 400 ml": {
+            "codigo": "9.20.10.030.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "PITAYA DAORA 400ml": {
+            "codigo": "9.20.10.030.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "Pitaya mega Daora 500 ml": {
+            "codigo": "9.20.30.030.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "PITAYA MEGA DAORA 500ml": {
+            "codigo": "9.20.30.030.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "Pitaya Praia do Rosa": {
+            "codigo": "9.25.01.004.00",
+            "categoria": "SMOOTHIES"
+        }
+    },
+    {
+        "PortuguÃªs": {
+            "codigo": "9.10.10.020.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "PORTUGUÊS": {
+            "codigo": "9.10.10.020.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "PromoÃ§Ã£o Kalzone + Suco 500ml": {
+            "codigo": "9.40.20.040.00",
+            "categoria": "PROMOCAO/COMBO"
+        }
+    },
+    {
+        "PromoÃ§Ã£o PRA FAMÃLIA": {
+            "codigo": "9.40.20.010.00",
+            "categoria": "PROMOCAO/COMBO"
+        }
+    },
+    {
+        "PromoÃ§Ã£o PRA NÃ“S": {
+            "codigo": "9.40.20.000.00",
+            "categoria": "PROMOCAO/COMBO"
+        }
+    },
+    {
+        "Promoção Kalzone + Suco 500ml": {
+            "codigo": "9.40.20.040.00",
+            "categoria": "PROMOCAO/COMBO"
+        }
+    },
+    {
+        "Promoção Pra Família": {
+            "codigo": "9.40.20.010.00",
+            "categoria": "PROMOCAO/COMBO"
+        }
+    },
+    {
+        "Promoção Pra Nós": {
+            "codigo": "9.40.20.000.00",
+            "categoria": "PROMOCAO/COMBO"
+        }
+    },
+    {
+        "REFRESH": {
+            "codigo": "9.30.50.040.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Refri Lata": {
+            "codigo": "9.30.60.030.00",
+            "categoria": "BEBIDAS"
+        }
+    },
+    {
+        "Refrigerante lata - 350ml": {
+            "codigo": "9.30.60.030.00",
+            "categoria": "BEBIDAS"
+        }
+    },
+    {
+        "RELAXANTE": {
+            "codigo": "9.30.50.030.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Relex": {
+            "codigo": "9.30.50.030.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Sem PressÃ£o": {
+            "codigo": "9.30.50.010.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "SEM PRESSÃO": {
+            "codigo": "9.30.50.010.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Sprite - lata": {
+            "codigo": "9.30.60.070.00",
+            "categoria": "BEBIDAS"
+        }
+    },
+    {
+        "SUCO VERDE": {
+            "codigo": "9.30.50.000.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Uva": {
+            "codigo": "9.30.20.100.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Uva - 500ml": {
+            "codigo": "9.30.20.100.00",
+            "categoria": "SUCOS"
+        }
+    },
+    {
+        "Vegano": {
+            "codigo": "9.10.40.030.00",
+            "categoria": "KALZONES"
+        }
+    },
+    {
+        "VEGETARIANO": {
+            "codigo": "9.10.40.030.00",
+            "categoria": "KALZONES"
+        }
+    }
+]
