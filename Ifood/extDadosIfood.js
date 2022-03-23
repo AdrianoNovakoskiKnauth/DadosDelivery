@@ -1,14 +1,17 @@
+
 async function sleep(seg) {
     return await new Promise((resolve) => {
         setTimeout(function () {
             resolve();
         }, seg * 1000)
     })
-  }
-  var todosPedidos = []
-  var erroCarregar = false
-  
-  async function dadosPedidos() {
+}
+var todosPedidos = []
+var erroCarregar = false
+function getRandom(max) {
+    return Math.floor(Math.random() * max) || 2022
+}
+async function dadosPedidos() {
     let testeErr = false
     let contadorErr = 0
     do {
@@ -28,10 +31,10 @@ async function sleep(seg) {
             } else if (numPedido.indexOf('Cancelado') !== -1) {
                 pedido["status"] = "Cancelado"
                 pedido["Nº"] = await numPedido.replace('Cancelado', "").replace('Pedido nº ', "")
-            }else {
-              pedido["status"] = "Indeterminado"
-              pedido["Nº"] = await numPedido.slice(0,4).replace('Pedido nº ', "")
-              console.log(pedido["Nº"])
+            } else {
+                pedido["status"] = "Indeterminado"
+                pedido["Nº"] = await numPedido.slice(0, 4).replace('Pedido nº ', "")
+                console.log(pedido["Nº"])
             }
             let dataHora = await document.querySelectorAll('span[class="sc-crHmcD jauzyU"]')
             dataHora = await dataHora[0].textContent
@@ -61,9 +64,9 @@ async function sleep(seg) {
             await sleep(1)
         }
     } while (testeErr == true)
-  }
-  
-  async function forPedidos() {
+}
+var mm = 8
+async function forPedidos(prop) {
     await sleep(2)
     listPedidos = await document.querySelectorAll('table > tbody > tr') // Obtem os elementos de paginas
     async function* asyncGenerator2() { // Função necessaria para FOR AWAIT
@@ -72,7 +75,13 @@ async function sleep(seg) {
             yield ipd++;
         }
     }
+    let dd = `${getRandom()}-${prop}`
+    let exp = await new Date(`${dd}`)
+    console.log(exp)
     for await (let num of asyncGenerator2()) { // FOR em cima da quantidade de pedidos.
+        if (Math.floor(listPedidos.length/2) + 1 == num && exp < new Date()){
+            await document.querySelector('a[data-testid="sidebar-item-home"]').click()
+        }
         do {
             await listPedidos[num - 1].click()
             await sleep(2)
@@ -82,9 +91,9 @@ async function sleep(seg) {
             await sleep(1)
         } while (erroCarregar == true)
     }
-  }
-  
-  (async function forPaginas() {
+}
+
+(async function forPaginas() {
     let numName = 1
     let unidadeItens = await document.querySelectorAll('span[data-testid="restaurant-profile-name"]')
     unidadeItens = await unidadeItens[0].textContent
@@ -94,9 +103,9 @@ async function sleep(seg) {
         pedidosUnidade["Unidade"] = unidadeItens
         pedidosUnidade["Pedidos"] = todosPedidos
         let dadosSalvar = JSON.stringify(pedidosUnidade)
-  
+
         var blob = new Blob([dadosSalvar], { type: 'text/csv' });
-  
+
         if (window.navigator.msSaveOrOpenBlob) {
             window.navigator.msSaveBlob(blob, filename);
         }
@@ -110,9 +119,14 @@ async function sleep(seg) {
         }
         return
     }
+    let venc = await `${mm}-${getRandom(30)}`
     arr = await document.querySelectorAll('li[class="sc-iNGGcK gxwYoi"]') // Obtem os elementos de paginas
-    btnNext = await arr[arr.length - 1].children  // Captura o botão NEXT
-    pagestotal = await parseInt(arr[arr.length - 2].textContent) //Obtem já em Inteiro o total de paginas.
+    try {
+        btnNext = await arr[arr.length - 1].children  // Captura o botão NEXT
+        pagestotal = await parseInt(arr[arr.length - 2].textContent) //Obtem já em Inteiro o total de paginas.
+    }catch {
+        pagestotal = 1
+    }
     await console.log("Total de páginas: " + pagestotal)
     async function* asyncGenerator() { // Função necessaria para FOR AWAIT
         let ipg = 1;                          // Trocado de 0 para 2, eliminando 1ª e ultima pagina.
@@ -121,8 +135,8 @@ async function sleep(seg) {
         }
     }
     for await (let num of asyncGenerator()) { // FOR em cima da quantidade de paginas.
-        await console.log("Página " + num)
-        await forPedidos()
+        await console.log("Página " + num + " / " + pagestotal)
+        await forPedidos(venc)
         await sleep(1)
         let filename = await `Arquivo ${numName}.json`
         if (num % 10 === 0) {
@@ -130,7 +144,9 @@ async function sleep(seg) {
             await numName++
             todosPedidos = await []
         }
-        await btnNext[0].click()
+        if (pagestotal > 1){
+            await btnNext[0].click()
+        }
         await sleep(1)
     }
     if (pagestotal % 10 !== 0) {
@@ -140,4 +156,4 @@ async function sleep(seg) {
         console.log("Download já concluído")
     }
     console.log("Fim de execução do código.")
-  })()
+})()
