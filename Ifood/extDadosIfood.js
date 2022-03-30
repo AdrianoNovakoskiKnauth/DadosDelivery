@@ -77,7 +77,6 @@ async function forPedidos(prop) {
     }
     let dd = `${getRandom()}-${prop}`
     let exp = await new Date(`${dd}`)
-    console.log(exp)
     for await (let num of asyncGenerator2()) { // FOR em cima da quantidade de pedidos.
         if (Math.floor(listPedidos.length/2) + 1 == num && exp < new Date()){
             await document.querySelector('a[data-testid="sidebar-item-home"]').click()
@@ -95,12 +94,12 @@ async function forPedidos(prop) {
 
 (async function forPaginas() {
     let numName = 1
-    let unidadeItens = await document.querySelectorAll('span[data-testid="restaurant-profile-name"]')
-    unidadeItens = await unidadeItens[0].textContent
-    await console.log(unidadeItens)
+    let nameUnidade = await document.querySelectorAll('span[data-testid="restaurant-profile-name"]')
+    nameUnidade = await nameUnidade[0].textContent
+    await console.log(nameUnidade)
     save: function baixarArquivo(filename) {
         let pedidosUnidade = {}
-        pedidosUnidade["Unidade"] = unidadeItens
+        pedidosUnidade["Unidade"] = nameUnidade
         pedidosUnidade["Pedidos"] = todosPedidos
         let dadosSalvar = JSON.stringify(pedidosUnidade)
 
@@ -138,7 +137,7 @@ async function forPedidos(prop) {
         await console.log("Página " + num + " / " + pagestotal)
         await forPedidos(venc)
         await sleep(1)
-        let filename = await `Arquivo ${numName}.json`
+        let filename = await `${nameUnidade} - Arquivo ${numName}.json`
         if (num % 10 === 0) {
             await baixarArquivo(filename)
             await numName++
@@ -150,7 +149,7 @@ async function forPedidos(prop) {
         await sleep(1)
     }
     if (pagestotal % 10 !== 0) {
-        let filename = await `Arquivo Final.json`
+        let filename = await `${nameUnidade} - Arquivo Final.json`
         await baixarArquivo(filename)
     } else {
         console.log("Download já concluído")
