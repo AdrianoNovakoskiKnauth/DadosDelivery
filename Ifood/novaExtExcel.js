@@ -5,22 +5,6 @@ const data = require('./provisorio.json') //Defina AQUI o arquivo a ser converti
 const { obterProduto, obterUnidade, obterMes } = require('../myModules/app')
 const readline = require('readline')
 
-function escolhaRelatorio() {
-    let resp = ""
-    let leitor = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout
-    })
-    leitor.question("\n\tDigite o número da opção de arquivo deseja gerar?\n\n\t 1 - Detalhado (Unidade, Pedido, Status, Data, Produto, Quantidade, Código)" +
-        "\n\t 2 - Resumido (Unidade, Data, Produto, Quantidade, Código)\n\t Digite: ", function (answer) {
-            resp = answer;
-            leitor.close();
-        })
-    if (resp != "1" || resp != "2") {
-        console.log("Entrada inválida! \n Digite apenas os número das opções.")
-    }
-}
-//escolhaRelatorio()
 
 const headingColumnNames = [
     "Unidade",
@@ -53,7 +37,9 @@ data.forEach(Uni => {
         itensDia.forEach(i => {
             if (i.length === 5) {
                 let descProduto = i[0]
-                descProduto = descProduto.replace("Este item foi cancelado", "")
+                descProduto = descProduto.replace("Este item foi cancelado.", "")
+                    .replace("Este sub item foi cancelado.", "")
+                    .replace("Este item foi cancelado", "")                
                 let codProduto = obterProduto(descProduto, "codigo")
                 if (codProduto != "Molhos" && codProduto != "Adicional" && codProduto != false) {
                     let columnIndex = 1; //diz para começar na primeira coluna
@@ -70,18 +56,10 @@ data.forEach(Uni => {
                     rowIndex++; //incrementa o contador para ir para a próxima linha
                 } else if(codProduto == false) {
                     console.log(i[0]) // Descrição do produto
-                } else {
-                    let item = []
-                    item.push(i[0]) // Descrição do produto
-                    codProduto ? item.push(codProduto) : item.push("Item não encontrado")
-                    itensDescartados.push(item)
                 }
             } 
         })
     })
-    /* itensDescartados.forEach(item => {
-        console.log(item)
-    }) */
 });
 wb.write(`Delivery.xlsx`)
 
